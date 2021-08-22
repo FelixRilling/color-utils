@@ -58,6 +58,7 @@ impl Rgb {
         Rgb::from_channels_with_alpha(red, green, blue, RgbChannel::from_value(value_max()))
     }
 
+    // TODO: enforce same precision for all channels
     /// Creates a color based on the given color and alpha channels.
     pub fn from_channels_with_alpha(
         red: RgbChannel,
